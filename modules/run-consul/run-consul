@@ -1,6 +1,7 @@
 #!/bin/bash
 # This script is used to configure and run Consul on a Google Compute Instance.
 
+
 set -e
 
 # Import the appropriate bash commons libraries

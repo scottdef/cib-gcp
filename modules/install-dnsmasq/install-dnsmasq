@@ -4,6 +4,7 @@
 #
 # - Ubuntu 18.04
 
+
 set -e
 
 # Import the appropriate bash commons libraries
