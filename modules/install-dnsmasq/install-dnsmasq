@@ -4,7 +4,6 @@
 #
 # - Ubuntu 18.04
 
-
 set -e
 
 # Import the appropriate bash commons libraries
@@ -12,7 +11,7 @@ readonly BASH_COMMONS_DIR="/opt/gruntwork/bash-commons"
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 readonly DEFAULT_CONSUL_DOMAIN="consul"
-readonly DEFAULT_CONSUL_IP="0.0.0.0"
+readonly DEFAULT_CONSUL_IP="127.0.0.1"
 readonly DEFAULT_CONSUL_DNS_PORT=8600
 
 readonly DNS_MASQ_CONFIG_DIR="/etc/dnsmasq.d"
