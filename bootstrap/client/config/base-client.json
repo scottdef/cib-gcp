@@ -1,13 +1,16 @@
-"datacenter": "us-central1",
-"server": false,
-"acl": {
-  "enabled": true,
-  "default_policy": "allow",
-  "enable_token_persistence": true,
-  "tokens": {
-    "master": "6f4d67b1-ab8e-8d23-c130-52f7444de08f"
+{
+  "primary_datacenter": "us-central1",
+  "server": false,
+  "acl": {
+    "enabled": true,
+    "default_policy": "allow",
+    "enable_token_persistence": true,
+    "tokens": {
+      "master": "6f4d67b1-ab8e-8d23-c130-52f7444de08f"
+    }
+  },
+  "ports": {
+    "grpc": 8502
   }
-},
-"ports": {
-  "grpc": 8502
+  
 }
