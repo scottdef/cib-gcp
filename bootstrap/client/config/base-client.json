@@ -1,7 +1,7 @@
 {
   "primary_datacenter": "us-central1",
   "server": false,
-  "encrypt:" "DtJ2A/Yn1yxhBL3kC5YIwY6aEUYm7OMhAtAHK3/QxsM=",
+  "encrypt": "DtJ2A/Yn1yxhBL3kC5YIwY6aEUYm7OMhAtAHK3/QxsM=",
   "verify_incoming": false,
   "verify_outgoing": true,
   "verify_server_hostname": true,
