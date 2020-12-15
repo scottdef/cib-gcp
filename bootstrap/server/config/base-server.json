@@ -1,6 +1,9 @@
 {
   "primary_datacenter": "us-central1",
   "data_dir": "/opt/consul/data",
+  "node_name": "",
+  "log_level": "DEBUG",
+  "log_file": "/opt/consul",
   "encrypt": "DtJ2A/Yn1yxhBL3kC5YIwY6aEUYm7OMhAtAHK3/QxsM=",
   "verify_incoming": true,
   "verify_outgoing": true,

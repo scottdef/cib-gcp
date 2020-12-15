@@ -1,5 +1,8 @@
 {
   "primary_datacenter": "us-central1",
+  "node_name": "",
+  "log_level": "DEBUG",
+  "log_file": "/opt/consul",
   "server": false,
   "encrypt": "DtJ2A/Yn1yxhBL3kC5YIwY6aEUYm7OMhAtAHK3/QxsM=",
   "verify_incoming": false,
