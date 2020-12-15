@@ -1,0 +1,12 @@
+{
+  "node_name": "server-2"
+  "verify_incoming": true,
+  "verify_outgoing": true,
+  "verify_server_hostname": false,
+  "ca_file": "/opt/consul/tls/ca/consul-agent-ca.pem",
+  "cert_file": "/opt/consul/tls/us-central1-server-consul-2.pem",
+  "key_file": "/opt/consul/tls/us-central1-server-consul-2-key.pem",
+  "auto_encrypt": {
+    "allow_tls": true
+  }
+}

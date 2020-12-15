@@ -145,8 +145,8 @@ function generate_consul_config {
   local -r cluster_tag_name="${4}"
   local -r cluster_size_instance_metadata_key_name="${5}"
   local -r datacenter="${6}"
-  local -r enable_gossip_encryption="${7}"
-  local -r gossip_encryption_key="${8}"
+  local -r enable_gossip_encryption="true"
+  local -r gossip_encryption_key="DtJ2A/Yn1yxhBL3kC5YIwY6aEUYm7OMhAtAHK3/QxsM="
   local -r enable_rpc_encryption="${9}"
   local -r verify_server_hostname="${10}"
   local -r ca_path="${11}"
@@ -249,6 +249,9 @@ EOF
   "bind_addr": "$instance_ip_address",
   $bootstrap_expect
   "client_addr": "0.0.0.0",
+  "log_level": "DEBUG",
+  "log_file": "/opt/consul/debug.log",
+  "primary_datacenter": "$datacenter",
   "datacenter": "$datacenter",
   "node_name": "$instance_id",
   $recursors_config
@@ -257,7 +260,21 @@ EOF
   $gossip_encryption_configuration
   $rpc_encryption_configuration
   $autopilot_configuration
-  "ui": $ui
+  "ui": {
+    "enabled": true
+  },
+  "acl": {
+    "enabled": true,
+    "default_policy": "allow",
+    "enable_token_persistence": true,
+  },
+  "connect": {
+    "enabled": true
+  },
+  "ports": {
+    "grpc": 8502
+  }
+
 }
 EOF
 )
